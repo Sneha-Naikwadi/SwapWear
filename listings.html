@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Clothes | SwapWear</title>
+
+    <link rel="stylesheet" href="listings.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-shirt"></i>
+        <span>SwapWear</span>
+    </div>
+
+
+    <nav id="navbar">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="listings.html" class="active">
+            Listings
+        </a>
+
+        <a href="add-item.html">
+            Add Item
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="chat.html">
+            Chat
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+
+    </nav>
+
+
+    <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<main>
+
+
+    <section class="listing-hero">
+
+        <div>
+
+            <span>
+                SWAPWEAR MARKETPLACE
+            </span>
+
+            <h1>
+                Find Your Next
+                <strong>Favorite Outfit</strong>
+            </h1>
+
+            <p>
+                Browse clothes listed by people
+                around you and discover something new.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FILTER ================= -->
+
+    <section class="filter-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search clothes..."
+            >
+
+        </div>
+
+
+        <select id="categoryFilter">
+
+            <option value="">
+                All Categories
+            </option>
+
+            <option value="shirt">
+                Shirts
+            </option>
+
+            <option value="tshirt">
+                T-Shirts
+            </option>
+
+            <option value="dress">
+                Dresses
+            </option>
+
+            <option value="jeans">
+                Jeans
+            </option>
+
+            <option value="jacket">
+                Jackets
+            </option>
+
+            <option value="top">
+                Tops
+            </option>
+
+        </select>
+
+
+        <select id="sizeFilter">
+
+            <option value="">
+                All Sizes
+            </option>
+
+            <option value="S">S</option>
+
+            <option value="M">M</option>
+
+            <option value="L">L</option>
+
+            <option value="XL">XL</option>
+
+        </select>
+
+
+        <button id="clearFilters" class="clear-btn">
+            Clear
+        </button>
+
+    </section>
+
+
+    <!-- ================= LISTINGS ================= -->
+
+    <section class="listings-section">
+
+        <div class="listing-heading">
+
+            <div>
+
+                <span>
+                    AVAILABLE CLOTHES
+                </span>
+
+                <h2>
+                    Browse Listings
+                </h2>
+
+            </div>
+
+            <p id="resultCount">
+                0 items
+            </p>
+
+        </div>
+
+
+        <div
+            id="loading"
+            class="loading"
+        >
+            <i class="fa-solid fa-spinner fa-spin"></i>
+            Loading clothes...
+        </div>
+
+
+        <div
+            id="productsGrid"
+            class="products-grid"
+        ></div>
+
+
+        <div
+            id="emptyState"
+            class="empty-state"
+            style="display:none;"
+        >
+
+            <i class="fa-solid fa-shirt"></i>
+
+            <h3>
+                No Clothes Found
+            </h3>
+
+            <p>
+                Try another search or filter.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 SwapWear. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="listings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | SwapWear</title>
+
+    <link rel="stylesheet" href="signup.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shirt"></i>
+
+        <span>
+            SwapWear
+        </span>
+
+    </div>
+
+
+    <a href="index.html"
+       class="home-link">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Home
+
+    </a>
+
+</header>
+
+
+
+<!-- ================= SIGNUP ================= -->
+
+<main class="signup-section">
+
+
+    <!-- FORM -->
+
+    <div class="signup-card">
+
+
+        <div class="signup-heading">
+
+            <div class="signup-icon">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+            </div>
+
+
+            <h1>
+                Create Account
+            </h1>
+
+
+            <p>
+                Join SwapWear and start exchanging clothes.
+            </p>
+
+        </div>
+
+
+
+        <form id="signupForm">
+
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        maxlength="50"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHONE -->
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Mobile Number
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter mobile number"
+                        autocomplete="tel"
+                        maxlength="15"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LOCATION -->
+
+            <div class="form-group">
+
+                <label for="location">
+                    City
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="Enter your city"
+                        autocomplete="address-level2"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-lock"></i>
+
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+
+
+                    <button
+                        type="button"
+                        id="togglePassword"
+                        class="password-toggle"
+                    >
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+
+                <div class="input-wrapper">
+
+                    <i class="fa-solid fa-lock"></i>
+
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+
+
+                    <button
+                        type="button"
+                        id="toggleConfirmPassword"
+                        class="password-toggle"
+                    >
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TERMS -->
+
+            <label class="terms">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    required
+                >
+
+                <span>
+
+                    I agree to the SwapWear
+
+                    <a href="#"
+                       id="termsLink">
+
+                        Terms & Conditions
+
+                    </a>
+
+                </span>
+
+            </label>
+
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="signupMessage"
+                class="message"
+            ></div>
+
+
+
+            <!-- BUTTON -->
+
+            <button
+                type="submit"
+                id="signupButton"
+                class="signup-submit"
+            >
+
+                <span id="signupButtonText">
+                    Create Account
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+        </form>
+
+
+
+        <div class="login-link">
+
+            <p>
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- INFORMATION -->
+
+    <div class="signup-info">
+
+
+        <div class="info-image">
+
+            <img
+                src="images/hero.png"
+                alt="Sustainable Clothing Exchange"
+            >
+
+        </div>
+
+
+        <h2>
+            Join the SwapWear Community
+        </h2>
+
+
+        <p>
+            Give your unused clothes a new life
+            while discovering fashion from people
+            around you.
+        </p>
+
+
+        <div class="info-points">
+
+
+            <div class="info-point">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <span>
+                    Easy clothing exchange
+                </span>
+
+            </div>
+
+
+            <div class="info-point">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <span>
+                    Connect with nearby users
+                </span>
+
+            </div>
+
+
+            <div class="info-point">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <span>
+                    Chat before swapping
+                </span>
+
+            </div>
+
+
+            <div class="info-point">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <span>
+                    Support sustainable fashion
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        © 2026 SwapWear.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="signup.js"></script>
+
+</body>
+</html>

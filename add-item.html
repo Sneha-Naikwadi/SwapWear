@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add Item | SwapWear</title>
+
+    <link rel="stylesheet" href="add-item.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shirt"></i>
+
+        <span>SwapWear</span>
+
+    </div>
+
+
+    <nav id="navbar">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="listings.html">
+            Listings
+        </a>
+
+        <a href="add-item.html" class="active">
+            Add Item
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="chat.html">
+            Chat
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+    </nav>
+
+
+    <button class="menu-btn" id="menuBtn">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+<main class="add-container">
+
+
+    <div class="page-heading">
+
+        <span>
+            SELL / SWAP
+        </span>
+
+        <h1>
+            Add Your Clothing Item
+        </h1>
+
+        <p>
+            Share your unused clothes with the SwapWear community.
+        </p>
+
+    </div>
+
+
+    <form id="addItemForm" class="item-form">
+
+
+        <!-- IMAGE -->
+
+        <div class="form-section">
+
+            <h2>
+                <i class="fa-solid fa-image"></i>
+                Item Photo
+            </h2>
+
+            <div class="image-upload">
+
+                <div
+                    id="imagePreview"
+                    class="image-preview"
+                >
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <p>
+                        Upload clothing image
+                    </p>
+
+                </div>
+
+
+                <input
+                    type="file"
+                    id="image"
+                    accept="image/*"
+                    required
+                >
+
+                <label for="image" class="upload-btn">
+                    <i class="fa-solid fa-upload"></i>
+                    Choose Image
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- BASIC DETAILS -->
+
+        <div class="form-section">
+
+            <h2>
+                <i class="fa-solid fa-circle-info"></i>
+                Basic Details
+            </h2>
+
+
+            <div class="form-grid">
+
+
+                <div class="form-group full">
+
+                    <label for="productName">
+                        Item Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="Example: Blue Denim Jacket"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="shirt">
+                            Shirt
+                        </option>
+
+                        <option value="tshirt">
+                            T-Shirt
+                        </option>
+
+                        <option value="dress">
+                            Dress
+                        </option>
+
+                        <option value="jeans">
+                            Jeans
+                        </option>
+
+                        <option value="jacket">
+                            Jacket
+                        </option>
+
+                        <option value="top">
+                            Top
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="size">
+                        Size
+                    </label>
+
+                    <select id="size" required>
+
+                        <option value="">
+                            Select Size
+                        </option>
+
+                        <option value="S">
+                            Small (S)
+                        </option>
+
+                        <option value="M">
+                            Medium (M)
+                        </option>
+
+                        <option value="L">
+                            Large (L)
+                        </option>
+
+                        <option value="XL">
+                            XL
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="condition">
+                        Condition
+                    </label>
+
+                    <select id="condition" required>
+
+                        <option value="">
+                            Select Condition
+                        </option>
+
+                        <option value="New">
+                            New
+                        </option>
+
+                        <option value="Like New">
+                            Like New
+                        </option>
+
+                        <option value="Good">
+                            Good
+                        </option>
+
+                        <option value="Used">
+                            Used
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="brand">
+                        Brand
+                    </label>
+
+                    <input
+                        type="text"
+                        id="brand"
+                        placeholder="Example: H&M"
+                    >
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Describe your clothing item..."
+                        required
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+        <div class="form-section">
+
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                Location
+            </h2>
+
+
+            <div class="form-group">
+
+                <label for="location">
+                    City
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Example: Aurangabad"
+                    required
+                >
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="formMessage"
+            class="form-message"
+        ></div>
+
+
+        <!-- =====================================
+     PRICE AND AVAILABILITY
+===================================== -->
+
+<div class="extra-details">
+
+    <h3>Price & Availability</h3>
+
+    <!-- PRICE -->
+
+    <div class="form-group">
+
+        <label for="price">
+            Price (₹)
+        </label>
+
+        <input
+            type="number"
+            id="price"
+            name="price"
+            placeholder="Example: 499"
+            min="0"
+        >
+
+    </div>
+
+
+    <!-- AVAILABLE FOR -->
+
+    <div class="form-group">
+
+        <label for="availableFor">
+            Available For
+        </label>
+
+        <select
+            id="availableFor"
+            name="availableFor"
+            required
+        >
+
+            <option value="">
+                Select Option
+            </option>
+
+            <option value="Swap">
+                Swap Only
+            </option>
+
+            <option value="Sell">
+                Sell Only
+            </option>
+
+            <option value="Both">
+                Swap & Sell
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- PICKUP LOCATION -->
+
+    <div class="form-group">
+
+        <label for="pickupLocation">
+            Pickup Location
+        </label>
+
+        <input
+            type="text"
+            id="pickupLocation"
+            name="pickupLocation"
+            placeholder="Example: Wakad, Pune"
+            required
+        >
+
+    </div>
+
+</div>
+
+
+        <button
+            type="submit"
+            class="submit-btn"
+            id="submitBtn"
+        >
+
+            <span id="submitText">
+                Add Item
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+    </form>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 SwapWear. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="add-item.js"></script>
+
+</body>
+</html>

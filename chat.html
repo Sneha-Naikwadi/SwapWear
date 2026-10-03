@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Chat | SwapWear</title>
+
+    <link
+        rel="stylesheet"
+        href="chat.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shirt"></i>
+
+        <span>
+            SwapWear
+        </span>
+
+    </div>
+
+
+    <nav id="navbar">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="listings.html">
+            Listings
+        </a>
+
+        <a href="add-item.html">
+            Add Item
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a
+            href="chat.html"
+            class="active"
+        >
+            Chat
+        </a>
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+    </nav>
+
+
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+    >
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+<!-- =====================================================
+     CHAT CONTAINER
+===================================================== -->
+
+<main class="chat-container">
+
+
+    <!-- =================================================
+         LEFT SIDEBAR
+    ================================================== -->
+
+    <aside class="chat-sidebar">
+
+
+        <div class="sidebar-header">
+
+            <div class="messages-title">
+
+                <h2>
+                    Messages
+                </h2>
+
+                <span id="messageCount">
+                    0
+                </span>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search conversations..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="conversationList"
+            class="conversation-list"
+        >
+
+            <div class="no-chat">
+
+                Loading users...
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =================================================
+         RIGHT CHAT AREA
+    ================================================== -->
+
+    <section class="chat-main">
+
+
+        <!-- CHAT HEADER -->
+
+        <div class="chat-header">
+
+
+            <div class="chat-user-avatar">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+
+            <div class="chat-user-info">
+
+                <h3 id="selectedUserName">
+                    Select a conversation
+                </h3>
+
+                <p id="selectedUserEmail">
+                    Choose a user to start chatting
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             MESSAGES
+        ================================================== -->
+
+        <div
+            class="messages-area"
+            id="messagesArea"
+        >
+
+            <div class="welcome-chat">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <h2>
+                    Welcome to SwapWear Chat
+                </h2>
+
+                <p>
+                    Select a conversation to start messaging.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             MESSAGE FORM
+        ================================================== -->
+
+        <form
+            class="message-form"
+            id="messageForm"
+        >
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+
+
+            <button
+                type="submit"
+                class="send-btn"
+                title="Send Message"
+            >
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </form>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 SwapWear. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="chat.js"></script>
+
+</body>
+
+</html>

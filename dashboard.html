@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | SwapWear</title>
+
+    <link
+        rel="stylesheet"
+        href="dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="dashboard-header">
+
+    <div class="header-container">
+
+        <div class="logo">
+            SwapWear
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="listings.html">
+                listings
+            </a>
+
+            <a href="add-item.html">
+                Add Item
+            </a>
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+                Dashboard
+            </a>
+
+            <a href="chat.html">
+                Chat
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="dashboard-container">
+
+
+    <!-- =================================================
+         WELCOME
+    ================================================== -->
+
+    <section class="welcome-section">
+
+        <p class="section-label">
+            DASHBOARD
+        </p>
+
+        <h1>
+            Welcome to SwapWear
+        </h1>
+
+        <p>
+            Manage your clothing items and swap requests.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         SWAP REQUESTS
+    ================================================== -->
+<!-- =================================================
+     SWAP REQUESTS
+================================================== -->
+
+<section class="dashboard-section swap-requests-section">
+
+    <!-- SECTION HEADING -->
+    <div class="section-heading">
+
+        <div>
+
+            <p class="section-label">
+                REQUESTS
+            </p>
+
+            <h2>
+                Swap Requests
+            </h2>
+
+        </div>
+
+        <span
+            id="swapRequestsCount"
+            class="section-count"
+        >
+            0
+        </span>
+
+    </div>
+
+
+    <!-- REQUEST LIST -->
+    <div
+        id="swapRequestsList"
+        class="swap-requests-list"
+    >
+
+        <div class="empty-state">
+
+            <p>
+                No swap requests yet.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+   
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 SwapWear. All rights reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="dashboard.js"></script>
+
+
+</body>
+
+</html>

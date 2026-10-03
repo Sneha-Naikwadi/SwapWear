@@ -1,0 +1,910 @@
+/* =========================================================
+   SWAPWEAR DASHBOARD CSS
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f6;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.dashboard-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+nav a.active {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 25px 60px;
+}
+
+
+/* =========================================================
+   WELCOME SECTION
+========================================================= */
+
+.welcome-section {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #3c9569
+    );
+
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 40px;
+
+    margin-bottom: 35px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.welcome-section .section-label {
+    color: #dff5e8;
+}
+
+
+.welcome-section h1 {
+    font-size: 34px;
+    margin: 8px 0 10px;
+}
+
+
+.welcome-section p:not(.section-label) {
+    font-size: 16px;
+    opacity: 0.95;
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-label {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   DASHBOARD SECTION
+========================================================= */
+
+.dashboard-section {
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    padding-bottom: 18px;
+}
+
+
+.section-heading h2 {
+    font-size: 25px;
+    color: #222;
+}
+
+
+/* =========================================================
+   REQUEST COUNT
+========================================================= */
+
+.section-count {
+    min-width: 42px;
+    height: 42px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   REQUEST LIST
+========================================================= */
+
+.swap-requests-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   REQUEST CARD
+
+   FULL WIDTH CARD
+========================================================= */
+
+.swap-request-card {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    background: #fafafa;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    transition: all 0.2s ease;
+}
+
+
+.swap-request-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    border-color: #cfe6d9;
+}
+
+
+/* =========================================================
+   REQUEST IMAGE
+========================================================= */
+
+.swap-request-image {
+
+    width: 150px;
+
+    height: 150px;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+
+.swap-request-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   REQUEST INFORMATION
+========================================================= */
+
+.swap-request-info {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.swap-request-info h3 {
+
+    font-size: 21px;
+
+    color: #222;
+
+    margin-bottom: 12px;
+}
+
+
+.swap-request-info p {
+
+    font-size: 14px;
+
+    color: #666;
+
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+}
+
+
+.swap-request-info strong {
+
+    color: #333;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.request-status {
+
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: capitalize;
+}
+
+
+/* Pending */
+
+.request-status.pending {
+
+    background: #fff3cd;
+
+    color: #856404;
+}
+
+
+/* Accepted */
+
+.request-status.accepted {
+
+    background: #d4edda;
+
+    color: #155724;
+}
+
+
+/* Rejected */
+
+.request-status.rejected {
+
+    background: #f8d7da;
+
+    color: #721c24;
+}
+
+
+/* Cancelled */
+
+.request-status.cancelled {
+
+    background: #e2e3e5;
+
+    color: #383d41;
+}
+
+
+/* =========================================================
+   REQUEST DATE
+========================================================= */
+
+.request-date {
+
+    margin-top: 12px;
+
+    font-size: 12px !important;
+
+    color: #999 !important;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.empty-state {
+
+    min-height: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border: 2px dashed #dfe5e2;
+
+    border-radius: 14px;
+
+    background: #fbfcfb;
+
+    color: #777;
+
+    padding: 30px;
+
+    width: 100%;
+}
+
+
+.empty-state p {
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+.empty-state small {
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-container {
+
+        padding: 16px 20px;
+    }
+
+
+    nav {
+
+        gap: 15px;
+    }
+
+
+    nav a {
+
+        font-size: 13px;
+    }
+
+
+    .dashboard-container {
+
+        padding: 35px 20px 50px;
+    }
+
+
+    .welcome-section {
+
+        padding: 30px;
+    }
+
+
+    .welcome-section h1 {
+
+        font-size: 29px;
+    }
+
+
+    .swap-request-image {
+
+        width: 130px;
+
+        height: 130px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .header-container {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px 18px;
+    }
+
+
+    .dashboard-container {
+
+        padding: 25px 15px 40px;
+    }
+
+
+    .welcome-section {
+
+        padding: 25px;
+
+        border-radius: 14px;
+    }
+
+
+    .welcome-section h1 {
+
+        font-size: 25px;
+    }
+
+
+    .dashboard-section {
+
+        padding: 20px;
+
+        border-radius: 14px;
+    }
+
+
+    .section-heading {
+
+        align-items: center;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 21px;
+    }
+
+
+    /* Mobile card */
+
+    .swap-request-card {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+
+    .swap-request-image {
+
+        width: 100%;
+
+        height: 220px;
+    }
+
+
+    .swap-request-info h3 {
+
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .logo {
+
+        font-size: 24px;
+    }
+
+
+    nav {
+
+        gap: 10px 14px;
+    }
+
+
+    nav a {
+
+        font-size: 12px;
+    }
+
+
+    .welcome-section h1 {
+
+        font-size: 22px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 19px;
+    }
+
+
+    .section-count {
+
+        min-width: 36px;
+
+        height: 36px;
+
+        font-size: 14px;
+    }
+
+
+    .swap-request-image {
+
+        height: 200px;
+    }
+
+}
+
+/* =========================================================
+   FIX SWAP REQUESTS LAYOUT
+========================================================= */
+
+.dashboard-section {
+    display: block !important;
+    width: 100%;
+}
+
+.section-heading {
+    display: flex !important;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.swap-requests-list {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 18px;
+}
+
+.swap-request-card {
+    display: flex !important;
+    width: 100% !important;
+}
+
+.dashboard-section .section-heading {
+    display: flex !important;
+    width: 100% !important;
+    float: none !important;
+}
+
+.dashboard-section .swap-requests-list {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+}
+
+.dashboard-section .swap-request-card {
+    width: 100% !important;
+    float: none !important;
+}
+
+/* =========================================================
+   FINAL SWAP REQUESTS LAYOUT FIX
+========================================================= */
+
+.swap-requests-section {
+    display: block !important;
+    width: 100% !important;
+}
+
+
+/* Heading */
+
+.swap-requests-section .section-heading {
+    display: flex !important;
+    width: 100% !important;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+/* Request list BELOW heading */
+
+.swap-requests-section .swap-requests-list {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    gap: 18px;
+
+    clear: both;
+}
+
+
+/* Request card */
+
+.swap-requests-section .swap-request-card {
+    display: flex !important;
+
+    width: 100% !important;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .swap-requests-section {
+        width: 100% !important;
+    }
+
+    .swap-requests-section .section-heading {
+        width: 100% !important;
+    }
+
+    .swap-requests-section .swap-requests-list {
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+    }
+
+    .swap-requests-section .swap-request-card {
+        width: 100% !important;
+
+        flex-direction: column !important;
+
+        align-items: stretch !important;
+    }
+
+}
+
+/* =====================================================
+   ACCEPT / REJECT BUTTONS
+===================================================== */
+
+.request-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+.accept-btn,
+.reject-btn {
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+/* =====================================================
+   ACCEPT BUTTON
+===================================================== */
+
+.accept-btn {
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.accept-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+
+/* =====================================================
+   REJECT BUTTON
+===================================================== */
+
+.reject-btn {
+
+    background: #dc2626;
+
+    color: #ffffff;
+}
+
+
+.reject-btn:hover {
+
+    background: #b91c1c;
+
+    transform: translateY(-1px);
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .request-actions {
+
+        width: 100%;
+
+        flex-direction: column;
+
+    }
+
+
+    .accept-btn,
+    .reject-btn {
+
+        width: 100%;
+
+    }
+
+}
