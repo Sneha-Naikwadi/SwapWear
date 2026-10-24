@@ -876,7 +876,7 @@ async function loadProducts() {
 
         const response =
             await fetch(
-                `${API_URL}/api/products`
+                `${API_URL}/api/items`
             );
 
 
@@ -897,33 +897,18 @@ async function loadProducts() {
             result
         );
 
+let databaseProducts = [];
 
-        let databaseProducts = [];
-
-
-        if (
-            Array.isArray(result)
-        ) {
-
-            databaseProducts =
-                result;
-
-        } else if (
-            Array.isArray(result.data)
-        ) {
-
-            databaseProducts =
-                result.data;
-
-        } else if (
-            Array.isArray(result.products)
-        ) {
-
-            databaseProducts =
-                result.products;
-        }
-
-
+if (Array.isArray(result)) {
+    databaseProducts = result;
+} else if (Array.isArray(result.items)) {
+    databaseProducts = result.items;
+} else if (Array.isArray(result.data)) {
+    databaseProducts = result.data;
+} else if (Array.isArray(result.products)) {
+    databaseProducts = result.products;
+}
+       
         // Add database products
         // without removing local products
 
@@ -1613,22 +1598,6 @@ const response = await fetch(
     }
 
 }
-
-
-   
-    
-
-   
-
-
-
-   
-
-
-
-
-       
-       
 
 
 // ==========================================================
