@@ -2,7 +2,7 @@
 // SWAPWEAR - LISTINGS.JS
 // ==========================================================
 
-const API_URL = "https://swapwear-backend-3zzy.onrender.com";
+const API_URL = "https://swapwear-backend-3zzv.onrender.com";
 
 
 // ==========================================================
