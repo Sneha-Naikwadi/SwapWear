@@ -88,6 +88,7 @@ mongoose
 app.get(
     "/api/test",
     (req, res) => {
+        console.log("API TEST ROUTE HIT");
 
         res.status(200).json({
 
